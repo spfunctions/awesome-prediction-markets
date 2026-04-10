@@ -292,6 +292,8 @@ Things you can build with the APIs and tools above.
 
 ---
 
+
+- [LearnAI — Prediction Market Course](https://www.uselearnai.com/chat?topic=Polymarket) — Interactive AI tutor for prediction markets; teaches Polymarket mechanics, probability calibration, and market strategy through conversation
 ## Contributing
 
 1. Fork this repo
