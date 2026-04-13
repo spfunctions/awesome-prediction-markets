@@ -48,6 +48,7 @@ Which platform fits your use case?
 - [Agent Frameworks & Examples](#agent-frameworks--examples)
 - [Data & Datasets](#data--datasets)
 - [Aggregators & Cross-Venue](#aggregators--cross-venue)
+- [Economic & Macro Data](#economic--macro-data)
 - [Analytics & Research Tools](#analytics--research-tools)
 - [Tutorials & Guides](#tutorials--guides)
 - [Strategy & Market Structure](#strategy--market-structure)
@@ -114,6 +115,10 @@ Connect LLMs to prediction market data via the Model Context Protocol.
   claude mcp add simplefunctions --url https://simplefunctions.dev/api/mcp/mcp
   ```
 - [prediction-market-mcp-example](https://github.com/spfunctions/prediction-market-mcp-example) — Minimal 50-line MCP server for learning. Search markets, get context, price changes.
+- [us-gov-open-data-mcp](https://github.com/lzinga/us-gov-open-data-mcp) — 300+ tools across 40+ U.S. government APIs. FRED, Treasury, BLS, Congress, FDA, EPA, SEC. Selective module loading.
+- [fred-mcp-server](https://github.com/kablewy/fred-mcp-server) — FRED economic data for Claude/Cursor.
+- [mcp-fredapi](https://github.com/Jaldekoa/mcp-fredapi) — FRED API with series search and category browsing.
+- [imf-data-mcp](https://github.com/c-cf/imf-data-mcp) — IMF economic data via SDMX 3.0 API.
 
 ## CLI Tools
 
@@ -168,6 +173,67 @@ Building AI agents that reason over prediction market data.
 - [Oddpool](https://oddpool.com) — Cross-venue odds, spreads, liquidity, arbitrage detection.
 - [BaseRateTimes](https://baseratetimes.com) — News through the lens of prediction markets.
 - [Electionbettingodds.com](https://electionbettingodds.com) — Aggregated political prediction market odds.
+
+## Economic & Macro Data
+
+The context layer for prediction markets — the economic indicators, government data, and macro signals that drive the events prediction markets trade on.
+
+### Aggregator Platforms
+
+- [OpenBB](https://github.com/OpenBB-finance/OpenBB) — Open-source financial data platform (65K+ stars). Covers FRED, World Bank, BLS, Eurostat, and hundreds of other data sources. Python, CLI, and AI agent integration.
+- [pandas-datareader](https://github.com/pydata/pandas-datareader) — Extract data from FRED, World Bank, OECD, Eurostat, Stooq, and more into pandas DataFrames. The standard Python library for economic data access.
+- [DBnomics](https://db.nomics.world/) — Aggregates 80+ statistical providers (central banks, national statistics offices, international organizations). [R client](https://github.com/dbnomics/rdbnomics), [Julia client](https://github.com/s915/DBnomics.jl), [Stata client](https://github.com/dbnomics-stata/dbnomics). Free API, no auth.
+- [findatapy](https://github.com/cuemacro/findatapy) — Download market data from Bloomberg, Eikon, Quandl, FRED and more via a unified interface.
+
+### FRED (Federal Reserve Economic Data)
+
+- [fredapi](https://github.com/mortada/fredapi) — Python client for FRED. `pip install fredapi`. Supports series search, vintages, releases.
+- [fredr](https://github.com/sboysel/fredr) — R client for FRED API. On CRAN.
+- [fred-rs](https://github.com/mdsabo/fred-rs) — Rust crate for FRED.
+- [fredcpp](https://github.com/nomadbyte/fredcpp) — C++ client for FRED.
+- [FredApi.jl](https://github.com/markushhh/FredApi.jl) — Julia package for FRED.
+- [fredric](https://github.com/DannyBen/fredric) — Ruby library and CLI for FRED.
+- [fred-mcp-server](https://github.com/kablewy/fred-mcp-server) — MCP server for FRED data in Claude/Cursor.
+- [mcp-fredapi](https://github.com/Jaldekoa/mcp-fredapi) — Another FRED MCP server with search and category browsing.
+
+### Federal Reserve & Central Banks
+
+- [FRB](https://github.com/avelkoski/FRB) — Python client for all Federal Reserve Bank data (not just FRED — includes flow of funds, financial accounts, survey data).
+- [econ_data](https://github.com/bdecon/econ_data) — Python notebooks demonstrating FRED, BLS, Census, and BEA API usage with working examples.
+
+### World Bank
+
+- [wbdata](https://github.com/OliverSherouse/wbdata) — Python library for World Bank data. Tested: pulls GDP per capita for any country/date range. No auth.
+- [world_bank_data](https://github.com/mwouts/world_bank_data) — Python library with pandas integration. Tested: pulls CPI inflation for US/CN/GB/BR. No auth.
+- [WDI](https://github.com/vincentarelbundock/WDI) — R package for World Bank data. On CRAN, 250+ stars.
+- [WorldBankData.jl](https://github.com/4gh/WorldBankData.jl) — Julia package for World Bank data.
+
+### BLS (Bureau of Labor Statistics)
+
+- [blscrapeR](https://github.com/keberwein/blscrapeR) — R package for BLS data (unemployment, CPI, wages). 117 stars.
+- [blsAPI](https://github.com/mikeasilva/blsAPI) — R client for BLS API. 93 stars.
+- [BLS-APIs](https://github.com/MPX0222/BLS-APIs) — Python wrapper for BLS v1/v2 APIs.
+- BLS API v1 requires no auth key: `curl https://api.bls.gov/publicAPI/v1/timeseries/data/LNS14000000`
+
+### IMF
+
+- [IMFData](https://github.com/mingjerli/IMFData) — R package for IMF data. 49 stars.
+- [imf-data-mcp](https://github.com/c-cf/imf-data-mcp) — MCP server for IMF economic data via SDMX 3.0 API.
+- IMF API requires no auth: `https://data.imf.org` (SDMX 3.0)
+
+### Eurostat
+
+- [eurostat-api-client](https://github.com/opus-42/eurostat-api-client) — Python client for Eurostat data.
+- [eurostat_downloader](https://github.com/alecsandrei/eurostat_downloader) — Python tool for bulk Eurostat downloads.
+- Eurostat API requires no auth: `https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/`
+
+### Multi-Agency / Government
+
+- [us-gov-open-data-mcp](https://github.com/lzinga/us-gov-open-data-mcp) — MCP server + TypeScript SDK for **40+ U.S. government APIs** (300+ tools). Covers FRED, Treasury, BLS, Census, EPA, FDA, SEC, Congress, and more. 20+ APIs need no auth key. 94 stars.
+
+### OECD
+
+- OECD Data API requires no auth: `https://sdmx.oecd.org/public/rest/data/` (SDMX format)
 
 ## Analytics & Research Tools
 
