@@ -240,6 +240,7 @@ The context layer for prediction markets — the economic indicators, government
 - [Polymarket Analytics](https://www.loki.red/polymarket/) — Market stats and analytics.
 - [PolymarketStats](https://github.com/bodino/PolymarketStats) — Open source Polymarket analytics.
 - [Kalshi Research](https://kalshi.com/research) — Market insights and analysis from Kalshi.
+- [PolyMind](https://polyminds.netlify.app/) — Real-time Polymarket trading alerts with multi-AI analysis. Track whale bets, volume spikes, and 12 signal types.
 
 ## Tutorials & Guides
 
