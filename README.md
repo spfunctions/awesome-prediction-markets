@@ -146,6 +146,7 @@ Building AI agents that reason over prediction market data.
 - [kalshi-price-monitor](https://github.com/spfunctions/kalshi-price-monitor) — Terminal price alert monitor for Kalshi markets.
 - [polymarket-marketmaking](https://github.com/elielieli909/polymarket-marketmaking) — Market making bot for Polymarket.
 - [nevbot](https://github.com/neverix/nevbot) — Manifold market maker using OpenAI to answer questions.
+- [oracle3](https://github.com/YichengYang-Ethan/oracle3) — Autonomous trading agent across Kalshi, Polymarket, and Solana DFlow. Wang Transform pricing engine calibrated by hierarchical MLE on 291K+ resolved contracts; eight constraint-based arbitrage strategies, Kelly-sized execution. [DOI 10.5281/zenodo.20062549](https://doi.org/10.5281/zenodo.20062549).
 
 ## Data & Datasets
 
