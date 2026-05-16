@@ -73,6 +73,7 @@ Active prediction market platforms with programmatic access.
 | [Smarkets](https://smarkets.com) | [API](https://docs.smarkets.com/) | Politics, sports, current affairs | UK-regulated, GBP |
 | [Futuur](https://futuur.com) | API | Global events | Play money + real money |
 | [Insight Prediction](https://insightprediction.com) | API | Global events | Crypto |
+- [SezgiX](https://sezgix.com) - Centralized non-KYC prediction market with crypto price rounds, sports markets across 28 leagues, stock direction markets (TradingView), and provably-fair Originals. USDC-native, 0% commission, 6 languages (TR/EN/DE/FR/IT/RU).
 
 ## APIs & SDKs
 
